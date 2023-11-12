@@ -1,0 +1,33 @@
+{
+  "name": "env_node_ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "rm -rf build && tsc",
+    "prestart": "npm run build",
+    "start": "node build/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint . --ignore-path .gitignore",
+    "dev": "nodemon --watch src -e ts,ejs --exec npx ts-node src",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "eslint": "^8.30.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "lint-staged": {
+    "*.js": "npm run lint",
+    "*.ts": "npm run lint"
+  }
+}
