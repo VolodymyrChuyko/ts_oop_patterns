@@ -7,7 +7,7 @@
 - **Builder** constructs complex objects by separating construction and representation.
 - **Factory method** (***Todo***) creates objects without specifying the exact class to create.
 - **Prototype** creates objects by cloning an existing object.
-- **Singleton** (***Todo***) restricts object creation for a class to only one instance.
+- [**Singleton**](./src/singleton/) (***In progress***) restricts object creation for a class to only one instance.
 
 ## Structural
 **Structural patterns** concern class and object composition. They use inheritance to compose interfaces and define ways to compose objects to obtain new functionality.
